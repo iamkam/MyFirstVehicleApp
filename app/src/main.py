@@ -120,7 +120,7 @@ async def main():
     vehicle_app = SampleApp(vehicle)
     await vehicle_app.run()
 
-
+print("Main function")
 LOOP = asyncio.get_event_loop()
 LOOP.add_signal_handler(signal.SIGTERM, LOOP.stop)
 LOOP.run_until_complete(main())
